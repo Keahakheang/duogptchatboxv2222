@@ -28,6 +28,7 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
+
 app.disable("x-powered-by");
 app.use(helmet());
 app.use(express.json({ limit: "4kb" }));
