@@ -1,0 +1,157 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 12px;
+}
+
+.chat {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #dbe3ec;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+header {
+  padding: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+header p,
+footer {
+  color: #526078;
+}
+
+header p {
+  margin: 0;
+}
+
+#messages {
+  height: 60vh;
+  min-height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  max-width: 92%;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.message p {
+  margin: 0 0 10px;
+  white-space: pre-wrap;
+}
+
+.message p:last-child {
+  margin-bottom: 0;
+}
+
+.assistant {
+  background: #f1f5f9;
+}
+
+.user {
+  margin-left: auto;
+  background: #dbeafe;
+}
+
+.product {
+  margin: 12px 0;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #dbe3ec;
+  border-radius: 10px;
+}
+
+.product h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+.details {
+  color: #526078;
+  font-size: 0.85rem;
+}
+
+a {
+  color: #1d4ed8;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+footer {
+  padding: 0 16px 16px;
+  font-size: 0.8rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FairPrice Grocery Chatbot</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="chat">
+      <header>
+        <h1>FairPrice Grocery Chatbot</h1>
+        <p>Ask about one product. Prices are checked on FairPrice.</p>
+      </header>
+
+      <section
+        id="messages"
+        aria-label="Chat messages"
+        aria-live="polite"
+        aria-relevant="additions"
+      ></section>
+
+      <form id="chat-form">
+        <label class="sr-only" for="message">Your grocery price question</label>
+        <input
+          id="message"
+          name="message"
+          placeholder="What is the price of strawberries?"
+          maxlength="500"
+          autocomplete="off"
+          required
+        />
+        <button id="send" type="submit">Send</button>
+      </form>
+
+      <footer>Independent project. Not affiliated with FairPrice.</footer>
+    </main>
+  </body>
+</html>
